@@ -112,7 +112,7 @@ export const Footer = () => {
                 width="230"
                 height="150"
                 style={{ border: "none" }}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
               ></iframe>
               <br />
