@@ -1,0 +1,18 @@
+[
+        {
+            "img": "images/pizza_bacon.png",
+            "titulo": "Pizza napolitana"
+        },
+        {
+            "img": "images/costillas_cordero.png",
+            "titulo": "Parrillada"
+        },
+        {
+            "img": "images/ensalada_pasta.png",
+            "titulo": "Pasta vegetariana"
+        },
+        {
+            "img": "images/hamburguesa_especial.png",
+            "titulo": "Burger tres carnes"
+        }
+    ]

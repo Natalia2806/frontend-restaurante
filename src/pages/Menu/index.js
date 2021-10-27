@@ -4,7 +4,7 @@ import "./styles.css";
 
 export const Menu = () => {
   return (
-    <section
+    <section id="menu"
       class="container"
       style={{ marginTop: "72px", paddingBottom: "62px" }}
     >
