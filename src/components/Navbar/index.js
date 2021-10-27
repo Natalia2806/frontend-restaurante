@@ -66,6 +66,16 @@ export const Navbar = () => {
                 Carrito
               </a>
             </li>
+
+            <li className="nav-item">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/formulario"
+              >
+                Contactanos
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
