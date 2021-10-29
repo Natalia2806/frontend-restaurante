@@ -9,12 +9,12 @@
   background-image: url("../../assets/images/fondo_oscuro.jpg");
 }
 
-body {
+/* body {
   background: #181818;
   color: #fff;
   line-height: 1.6;
   font-family: "Quicksand", sans-serif;
-}
+} */
 
 .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);

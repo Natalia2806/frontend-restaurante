@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Title from "../../components/Login/Title/Title";
 import Label from "../../components/Login/Label/Label";
 import Input from "../../components/Login/Input/Input";
-import Reg from "../../components/register/Reg";
+import Dashboard from "../../pages/Dashboard/Dashboard";
 import "./Login.css";
 
 const Login = () => {
@@ -57,54 +57,51 @@ const Login = () => {
     };
 
     return (
-
-        <section className="containerP"
-
-            style={{ marginTop: "72px", paddingBottom: "42px", paddingTop: "42px" }}>
+        <div className="Administrador" style={{ marginTop: "72px" }}>
             {isLogin ?
-                <div>
-                    <h2>Hola, {user}!</h2>
+
+                <Dashboard/>
+                
+                    :
+                    <div className="containerP"
+
+                        style={{ marginTop: "72px", paddingBottom: "42px", paddingTop: "42px" }}>
+
+                        <div className="contact-wrapper animated boun ceInUP">
+                            <Title text='Iniciar sesión' />
+                            {hasError && <label className="label-alert" >Los datos ingresados son incorrectos.</label >}
+                            <Label text='Usuario' />
+                            <Input
+                                attribute={{
+                                    id: 'usuario',
+                                    name: 'usuario',
+                                    type: 'text',
+
+                                }}
+                                handleChange={handleChange}
+                            />
+                            <Label text='Contraseña' />
+                            <Input
+                                attribute={{
+                                    id: 'contraseña',
+                                    name: 'contraseña',
+                                    type: 'password',
+
+                                }}
+                                handleChange={handleChange}
+                                param={passwordError}
+                            />
+                            {passwordError &&
+                                <label className='label-error'>La constraseña debe tener mas de 6 digitos</label>}
+                            <div className='ingresarButton'>
+                                <button className='btn' onClick={handleSubmit}>
+                                    Ingresar
+                                </button>
+                            </div>
+                        </div>
+                    </div>}
                 </div>
-                :
-                <div className="contact-wrapper animated boun ceInUP">
-                    <Title text='Iniciar sesión' />
-                    {hasError && <label className="label-alert" >Los datos ingresados son incorrectos.</label >}
-                    <Label text='Usuario' />
-                    <Input
-                        attribute={{
-                            id: 'usuario',
-                            name: 'usuario',
-                            type: 'text',
-
-                        }}
-                        handleChange={handleChange}
-                    />
-                    <Label text='Contraseña' />
-                    <Input
-                        attribute={{
-                            id: 'contraseña',
-                            name: 'contraseña',
-                            type: 'password',
-
-                        }}
-                        handleChange={handleChange}
-                        param={passwordError}
-                    />
-                    {passwordError &&
-                        <label className='label-error'>La constraseña debe tener mas de 6 digitos</label>}
-                    <div className='ingresarButton'>
-                        <button className='btn' onClick={handleSubmit}>
-                            Ingresar
-                        </button>
-
-                    </div>
-                    <Reg />
-
-
-                </div>}
-
-        </section>
     );
 };
 
-export default Login;
+            export default Login;
