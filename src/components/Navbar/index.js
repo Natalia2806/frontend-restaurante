@@ -26,13 +26,9 @@ export const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link active"
-                aria-current="page"
-                href="src/historia.html"
-              >
+            <Link className="nav-link active" aria-current="page" to="/nosotros">
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/menu">

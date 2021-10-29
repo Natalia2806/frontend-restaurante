@@ -1,0 +1,22 @@
+[
+    {
+        "id": "persona1",
+        "img": "../images/gerente.jpg",
+        "titulo": "Gerente"
+    },
+    {
+        "id": "persona2",
+        "img": "../images/servicio.jpg",
+        "titulo": "Servicio"
+    },
+    {
+        "id": "persona3",
+        "img": "../images/chef.jpg",
+        "titulo": "Chef"
+    },
+    {
+        "id": "persona4",
+        "img": "../images/mesera.jpg",
+        "titulo": "Mesera"
+    }
+]
