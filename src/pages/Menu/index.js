@@ -1,10 +1,11 @@
-import { MenuItem } from "../../components/MenuItem";
+import { MenuItem } from "../../components/MenuItem/menu";
 import { menuData } from "../../data/menuData";
 import "./styles.css";
 
 export const Menu = () => {
   return (
-    <section id="menu"
+    <section
+      id="menu"
       class="container"
       style={{ marginTop: "72px", paddingBottom: "62px" }}
     >

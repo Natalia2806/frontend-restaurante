@@ -1,14 +1,24 @@
 import "./recomendados.css";
 
 export const Recomendados = (props) => {
-
-    return (
-        <><div class="row">
-            <div class="col recomendados_col">
-                <img src={props.img} alt="" style={{ width: "180px", height: "190px" }} class="img-fluid" /><h4>{props.titulo}</h4><button class="btn bg-light"><a class="especiales" href="menu.html" aria-current="page">Ver detalles</a></button>
-            </div>
+  return (
+    <>
+      <div className="row">
+        <div className="col recomendados_col">
+          <img
+            src={props.img}
+            alt=""
+            style={{ width: "180px", height: "190px" }}
+            className="img-fluid"
+          />
+          <h4>{props.titulo}</h4>
+          <button className="btn bg-light">
+            <a className="especiales" href="menu.html" aria-current="page">
+              Ver detalles
+            </a>
+          </button>
         </div>
-        </>
-    );
-}
-
+      </div>
+    </>
+  );
+};

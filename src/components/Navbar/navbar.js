@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import "./styles.css";
-
+import "./navBar.css";
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top">
@@ -66,9 +65,14 @@ export const Navbar = () => {
                 Carrito
               </a>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/login">
+            <li class="nav-item">
+              <Link class="nav-link active" aria-current="page" to="/login">
                 Login
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link active" aria-current="page" to="/form">
+                Contáctanos
               </Link>
             </li>
           </ul>
