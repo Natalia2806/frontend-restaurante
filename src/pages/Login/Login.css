@@ -9,13 +9,6 @@
   background-image: url("../../assets/images/fondo_oscuro.jpg");
 }
 
-body {
-  background: #181818;
-  color: #fff;
-  line-height: 1.6;
-  font-family: "Quicksand", sans-serif;
-}
-
 .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
@@ -24,7 +17,7 @@ body {
   padding: 1em;
 }
 
-.btn {
+.boton-login {
   font-size: 20px;
   color: white;
   background: transparent;
@@ -69,7 +62,6 @@ body {
   font-size: 17px;
   margin-bottom: 200px;
 }
-
 .label-error {
   font-size: 14px;
   color: red;

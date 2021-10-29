@@ -1,10 +1,16 @@
 import { Header } from "../../components/Header/header";
 import { Recomendados } from "../../components/Recomendados/recomendados";
+import { HomeServicios } from "../../components/homeServicios/homeServicios";
+import { Carrusel } from "../../components/Carrusel/Carrusel";
+
 import recomendadosData from "../../data/recomendadosData";
-import "./home.css";
+import homeService from "../../data/homeService.json";
+import carruselTestimonios from "../../data/carruselTest.json";
 
 export const Home = () => {
   let recomendados = recomendadosData;
+  let homeServices = homeService;
+  let carruselTest = carruselTestimonios;
   return (
     <>
       <Header />
@@ -26,15 +32,17 @@ export const Home = () => {
       </section>
 
       <section id="recomendados">
-        <div className="container content-center">
+        <div className="container content-center contenedorRecomendados">
           <h1 className="title">Descubre nuestras especialidades</h1>
-          {recomendados.map((data) => (
-            <Recomendados img={data.img} titulos={data.titulo}></Recomendados>
-          ))}
+          <div className="row g-4">
+            {recomendados.map((data) => (
+              <Recomendados img={data.img} titulo={data.titulo}></Recomendados>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section id="servicios" className="divider">
+      <section id="servicios" class="divider">
         <div className="container">
           <div className="content-center">
             <h1 className="padding-h1">Organizamos eventos</h1>
@@ -45,170 +53,23 @@ export const Home = () => {
               inventore saepe temporibus. Fuga, exercitationem architecto!
             </p>
           </div>
+
           <div className="row">
-            <div id="fiesta " className="col-md-3 img_row">
-              <img
-                src="images/fondo_eventos.jpg"
-                alt=""
-                className="img-fluid img-contenedor"
-              />
-            </div>
-            <div id="matrimonio " className="col-md-3 img_row">
-              <img
-                src="images/matrimonio.jpg"
-                alt=""
-                className="img-fluid img-contenedor"
-              />
-            </div>
-            <div id="cena " className="col-md-3 img_row">
-              <img
-                src="images/imagen2.jpg"
-                alt=""
-                className="img-fluid img-contenedor"
-              />
-            </div>
-            <div id="cumpleaños " className="col-md-3 img_row">
-              <img
-                src="images/cumpleaños2.jpg"
-                alt=""
-                className="img-fluid img-contenedor"
-              />
-            </div>
+            {homeServices.map((data) => (
+              <HomeServicios id={data.id} img={data.img} />
+            ))}
           </div>
         </div>
       </section>
-
       <section id="comentarios">
-        <div className="container">
-          <div className="content-center">
-            <h1 className="padding-top padding-h1">
+        <div class="container">
+          <div class="content-center">
+            <h1 class="padding-top padding-h1">
               Unas palabras de nuestros clientes
             </h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
           </div>
-          <div
-            id="carouselExampleIndicators"
-            className="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <p>
-                  Enim atque consectetur nesciunt cumque, iure esse voluptatem
-                  odit maxime,
-                  <br /> vel mollitia, earum doloremque veritatis pariatur
-                  inventore saepe temporibus. <br />
-                  Fuga, exercitationem architecto!
-                </p>
-                <div className="testimonial-user">
-                  <div className="row">
-                    <div className="col-md-3">
-                      <img
-                        src="images/personal2@2x.png"
-                        alt=""
-                        className="img-fluid"
-                      />
-                    </div>
-                    <div className="col-md-9">
-                      <h6>Sofia Mendez</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <p>
-                  Enim atque consectetur nesciunt cumque, iure esse voluptatem
-                  odit maxime,
-                  <br /> vel mollitia, earum doloremque veritatis pariatur
-                  inventore saepe temporibus. <br />
-                  Fuga, exercitationem architecto!
-                </p>
-                <div className="testimonial-user">
-                  <div className="row">
-                    <div className="col-md-3">
-                      <img
-                        src="images/personal1@2x.png"
-                        alt=""
-                        className="img-fluid"
-                      />
-                    </div>
-                    <div className="col-md-9">
-                      <h6>Jairo Díaz</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <p>
-                  Enim atque consectetur nesciunt cumque, iure esse voluptatem
-                  odit maxime,
-                  <br /> vel mollitia, earum doloremque veritatis pariatur
-                  inventore saepe temporibus. <br />
-                  Fuga, exercitationem architecto!
-                </p>
-                <div className="testimonial-user">
-                  <div className="row">
-                    <div className="col-md-3">
-                      <img
-                        src="images/testimonio1@2x.png"
-                        alt=""
-                        className="img-fluid"
-                      />
-                    </div>
-                    <div className="col-md-9">
-                      <h6>Sebastian Gimenez</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+          <Carrusel />
         </div>
       </section>
     </>

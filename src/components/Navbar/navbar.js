@@ -25,13 +25,13 @@ export const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active"
                 aria-current="page"
-                href="src/historia.html"
+                to="/nosotros"
               >
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/menu">
@@ -73,6 +73,15 @@ export const Navbar = () => {
             <li class="nav-item">
               <Link class="nav-link active" aria-current="page" to="/form">
                 Contáctanos
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/registro"
+              >
+                Registro
               </Link>
             </li>
           </ul>

@@ -24,6 +24,7 @@ export const MenuItem = ({ data: { name, description, price, image } }) => {
         <button
           type="button"
           className="btn btn-warning btn-block"
+          class="btn btn-warning btn-block botonMenu"
           data-bs-toggle="modal"
           data-bs-target="#burger1"
         >

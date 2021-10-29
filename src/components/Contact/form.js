@@ -5,7 +5,7 @@ import { Form, Row, Col } from "react-bootstrap";
 
 const formulario = () => {
   return (
-    <div className="container container-form">
+    <div className="container-formulario">
       <div className="content">
         <h1 className="logo">
           Reservas <span>Sal&Salsa</span>
