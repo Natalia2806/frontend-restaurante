@@ -1,6 +1,7 @@
 .user {
   flex: 4;
   padding: 20px;
+  color: #fff;
 }
 
 .userTitleContainer {
@@ -64,6 +65,7 @@
 
 .userShowUserTitle {
   font-weight: 300;
+  color: #fff;
 }
 
 .userShowBottom{
@@ -73,14 +75,14 @@
 .userShowTitle {
   font-size: 14px;
   font-weight: 600;
-  color: rgb(175, 170, 170);
+  color:white;
 }
 
 .userShowInfo{
     display: flex;
     align-items: center;
     margin: 20px 0px;
-    color: #444;
+    color: white;
 }
 
 .userShowIcon{
@@ -118,6 +120,7 @@
     width: 250px;
     height: 30px;
     border-bottom: 1px solid gray;
+    border-radius:6px;
 }
 
 .userUpdateRight{

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Title from "../../components/Login/Title/Title";
 import Label from "../../components/Login/Label/Label";
 import Input from "../../components/Login/Input/Input";
@@ -67,7 +68,7 @@ const Login = () => {
             paddingTop: "42px",
           }}
         >
-          <div className="contact-wrapper animated boun ceInUP">
+          <div className="contact-login animated boun ceInUP">
             <Title text="Iniciar sesión" />
             {hasError && (
               <label className="label-alert">
@@ -99,9 +100,17 @@ const Login = () => {
               </label>
             )}
             <div className="ingresarButton">
-              <button className="boton-login" onClick={handleSubmit}>
+              <button className="boton-login" onClick={handleSubmit} style={{marginRight: "10px"}}>
                 Ingresar
               </button>
+              <Link
+                className="boton-registro"
+                aria-current="page"
+                to="/registro"
+                style={{marginLeft: "10px"}}
+              >
+                Registro
+              </Link>
             </div>
           </div>
         </div>

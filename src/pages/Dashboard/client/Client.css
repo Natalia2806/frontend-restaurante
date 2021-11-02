@@ -1,15 +1,16 @@
 .client {
     flex: 4;
     padding: 20px;
+    color: #fff;
   }
   
-  .ClientTitleContainer {
+  .clientTitleContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .ClientAddButton {
+  .clientAddButton {
     width: 80px;
     border: none;
     padding: 5px;
@@ -20,19 +21,19 @@
     font-size: 16px;
   }
   
-  .ClientContainer {
+  .clientContainer {
     display: flex;
     margin-top: 20px;
   }
   
-  .ClientShow {
+  .clientShow {
     flex: 1;
     padding: 20px;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   }
   
-  .ClientUpdate {
+  .clientUpdate {
     flex: 2;
     padding: 20px;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
@@ -40,98 +41,100 @@
     margin-left: 20px;
   }
   
-  .ClientShowTop {
+  .clientShowTop {
     display: flex;
     align-items: center;
   }
   
-  .ClientShowImg {
+  .clientShowImg {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
   }
   
-  .ClientShowTopTitle {
+  .clientShowTopTitle {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
   }
   
-  .ClientShowClientname {
+  .clientShowclientname {
     font-weight: 600;
   }
   
-  .ClientShowClientTitle {
+  .clientShowclientTitle {
     font-weight: 300;
+    color: #fff;
   }
   
-  .ClientShowBottom{
+  .clientShowBottom{
       margin-top: 20px;
   }
   
-  .ClientShowTitle {
+  .clientShowTitle {
     font-size: 14px;
     font-weight: 600;
-    color: rgb(175, 170, 170);
+    color:white;
   }
   
-  .ClientShowInfo{
+  .clientShowInfo{
       display: flex;
       align-items: center;
       margin: 20px 0px;
-      color: #444;
+      color: white;
   }
   
-  .ClientShowIcon{
+  .clientShowIcon{
       font-size: 16px !important;
   }
   
-  .ClientShowInfoTitle{
+  .clientShowInfoTitle{
       margin-left: 10px;
   }
   
-  .ClientUpdateTitle{
+  .clientUpdateTitle{
       font-size: 24px;
       font-weight: 600;
   }
   
-  .ClientUpdateForm{
+  .clientUpdateForm{
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
   }
   
-  .ClientUpdateItem{
+  .clientUpdateItem{
       display: flex;
       flex-direction: column;
       margin-top: 10px;
   }
   
-  .ClientUpdateItem>label{
+  .clientUpdateItem>label{
       margin-bottom: 5px;
       font-size: 14px;
   }
   
-  .ClientUpdateInput{
+  .clientUpdateInput{
       border: none;
       width: 250px;
       height: 30px;
       border-bottom: 1px solid gray;
+      border-radius:6px;
   }
   
-  .ClientUpdateRight{
+  .clientUpdateRight{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
   }
   
-  .ClientUpdateUpload{
+  .clientUpdateUpload{
       display: flex;
       align-items: center;
   }
   
-  .ClientUpdateImg{
+  .clientUpdateImg{
       width: 100px;
       height: 100px;
       border-radius: 10px;
@@ -139,11 +142,11 @@
       margin-right: 20px;
   }
   
-  .ClientUpdateIcon{
+  .clientUpdateIcon{
       cursor: pointer;
   }
   
-  .ClientUpdateButton{
+  .clientUpdateButton{
       border-radius: 5px;
       border: none;
       padding: 5px;

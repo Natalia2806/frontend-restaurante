@@ -13,9 +13,9 @@ import {
     return (
       <div className="client">
         <div className="clientTitleContainer">
-          <h1 className="clientTitle">Editar usuario</h1>
-          <Link to="/newclient">
-            <button className="clientAddButton">Crear</button>
+          <h1 className="clientTitle">Editar Cliente</h1>
+          <Link to="/clients">
+            <button className="clientAddButton">Guardar</button>
           </Link>
         </div>
         <div className="clientContainer">
@@ -113,7 +113,7 @@ import {
                   </label>
                   <input type="file" id="file" style={{ display: "none" }} />
                 </div>
-                <button className="clientUpdateButton">Editar</button>
+                <button className="clientUpdateButton">Cargar</button>
               </div>
             </form>
           </div>

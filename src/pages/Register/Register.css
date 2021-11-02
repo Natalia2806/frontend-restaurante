@@ -9,20 +9,15 @@
   background-image: url("../../assets/images/fondo_oscuro.jpg");
 }
 
-.Administrador {
-  /* background-image: url("../../assets/images/fondo_oscuro.jpg"); */
-  background-color: #3c3c3c;
-}
-
-.contact-login {
+.contact-register {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
-.contact-login > * {
+.contact-register > * {
   padding: 1em;
 }
 
-.boton-login {
+.btn-register {
   font-size: 20px;
   color: white;
   background: transparent;
@@ -30,26 +25,9 @@
   border-radius: 6px;
   padding: 6px;
 }
-.boton-login:hover {
+.btn-register:hover {
   cursor: pointer;
   color: #d6cb30;
-}
-.boton-registro {
-  font-size: 20px;
-  color: white;
-  background: transparent;
-  border: 2px solid #d6cb30;
-  border-radius: 6px;
-  padding-Left: 6px;
-  padding-right: 6px;
-  padding-top: 7px;
-  padding-bottom: 8px;
-  text-decoration: none;
-}
-.boton-registro:hover {
-  cursor: pointer;
-  color: #d6cb30;
-  
 }
 
 .contact-form .form-group {

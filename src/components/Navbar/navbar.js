@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import {Login} from "@mui/icons-material"
 import "./navBar.css";
 export const Navbar = () => {
   return (
@@ -66,22 +67,14 @@ export const Navbar = () => {
               </a>
             </li>
             <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to="/login">
-                Login
-              </Link>
-            </li>
-            <li class="nav-item">
               <Link class="nav-link active" aria-current="page" to="/form">
                 Contáctanos
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link active"
-                aria-current="page"
-                to="/registro"
-              >
-                Registro
+            <li class="nav-item">
+              
+              <Link className="nav-link active" aria-current="page" to="/login">
+                <Login className="productListEdit"/> 
               </Link>
             </li>
           </ul>

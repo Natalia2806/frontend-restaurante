@@ -19,11 +19,23 @@
    margin-right:90px;
 }
 
-.logo {
-  font-weight: bold;
+.logo-topbar {
+  /* font-weight: bold;
   font-size: 30px;
-  color: darkblue;
+  color: darkblue; */
   cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    #fff783 0,
+    #ffdf67 25%,
+    #f9c346 50%,
+    #e8a722 75%,
+    #db8f00 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
 }
 
 .topRight{

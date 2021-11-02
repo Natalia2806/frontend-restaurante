@@ -14,8 +14,8 @@ export default function User() {
     <div className="user">
       <div className="userTitleContainer">
         <h1 className="userTitle">Editar usuario</h1>
-        <Link to="/newUser">
-          <button className="userAddButton">Crear</button>
+        <Link to="/users">
+          <button className="userAddButton">Guardar</button>
         </Link>
       </div>
       <div className="userContainer">
@@ -57,7 +57,7 @@ export default function User() {
           </div>
         </div>
         <div className="userUpdate">
-          <span className="userUpdateTitle">Editar</span>
+          <span className="userUpdateTitle">Cargar</span>
           <form className="userUpdateForm">
             <div className="userUpdateLeft">
               <div className="userUpdateItem">
@@ -113,7 +113,7 @@ export default function User() {
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
-              <button className="userUpdateButton">Editar</button>
+              <button className="userUpdateButton">Cargar</button>
             </div>
           </form>
         </div>
