@@ -5,7 +5,8 @@ import "./app.css";
 import { Home } from "./pages/Home/home";
 import { Menu } from "./pages/Menu/menu";
 import { Nosotros } from "./pages/Nosotros/nosotros";
-import { Form } from "./pages/Contact/contact";
+import { Form } from "./pages/Contact/formularioReserva";
+import { FormContact } from "./pages/Contact/formularioContactanos";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 
@@ -22,7 +23,8 @@ export const App = () => {
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
-          <Route exact path="/form" component={Form} />
+          <Route exact path="/formReserva" component={Form} />
+          <Route exact path="/formContactanos" component={FormContact} />
           <Route exact path="/inicio" component={Dashboard} />
           <Route exact path="/registro" component={Register} />
 

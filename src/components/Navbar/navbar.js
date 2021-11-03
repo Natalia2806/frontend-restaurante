@@ -47,15 +47,16 @@ export const Navbar = () => {
                 Servicios
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link active"
+            <li class="nav-item">
+              <Link
+                class="nav-link active"
                 aria-current="page"
-                href="src/reservas.html"
+                to="/formReserva"
               >
                 Reservas
-              </a>
+              </Link>
             </li>
+
             <li className="nav-item">
               <a
                 className="nav-link active"
@@ -71,7 +72,11 @@ export const Navbar = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to="/form">
+              <Link
+                class="nav-link active"
+                aria-current="page"
+                to="/formContactanos"
+              >
                 Contáctanos
               </Link>
             </li>
