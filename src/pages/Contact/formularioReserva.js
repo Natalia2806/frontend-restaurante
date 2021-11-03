@@ -1,4 +1,4 @@
-import Formulario from "../../components/Contact/form";
+import Formulario from "../../components/Contact/formReserva";
 import "./contact.css";
 
 export const Form = () => {

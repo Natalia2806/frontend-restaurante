@@ -10,7 +10,7 @@ export const Recomendados = (props) => {
           style={{ width: "210px", height: "190px" }}
           className="img-fluid imagenRecomendados"
         />
-        <h4 class="h4Recomendados">{props.titulo}</h4>
+        <h4 className="h4Recomendados">{props.titulo}</h4>
         <button className="btn btn-recomendados">
           <a className="especiales" href="menu.html" aria-current="page">
             Ver detalles
