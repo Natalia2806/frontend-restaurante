@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { useHistory } from "react-router";
-import { Footer } from "../../components/Footer/footer";
+
 import { AppContext } from "../../context/AppContext";
 import "./shoppingcart.css";
 
@@ -65,7 +65,7 @@ export const ShoppingCart = () => {
               "linear-gradient( 135deg, #fff783 0, #ffdf67 25%, #f9c346 50%, #e8a722 75%, #db8f00 100% )",
           }}
         >
-          Se eliminado un producto de su carrito
+          Se ha eliminado un producto de su carrito
         </div>
         <div className="carrito">
           {shoppingCartItems.length && (

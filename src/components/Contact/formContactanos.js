@@ -71,7 +71,7 @@ class formulario extends React.Component {
                         type="email"
                         name="email"
                         minlength="8"
-                        maxlength="30"
+                        maxlength="60"
                       />
                     </p>
                   </Col>
