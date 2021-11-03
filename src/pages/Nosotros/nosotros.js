@@ -19,7 +19,7 @@ export const Nosotros = () => {
                         </div>
                         <div className="col-lg-7">
                             <div className="container contener_imagen">
-                                <img src="../images/restaurante1.jpg " className="img-fluid rounded restaurante" alt=""/>
+                                <img src="http://localhost:3000/images/restaurante1.jpg " className="img-fluid rounded restaurante" alt=""/>
                             </div>
                         </div>
                     </div>

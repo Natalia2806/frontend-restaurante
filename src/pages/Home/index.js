@@ -5,15 +5,11 @@ import { Carrusel } from "../../components/Carrusel/Carrusel";
 
 import recomendadosData from "../../data/recomendadosData";
 import homeService from "../../data/homeService.json";
-import carruselTestimonios from "../../data/carruselTest.json";
-
-
-
+// import carruselTestimonios from "../../data/carruselTest.json";
 
 export const Home = () => {
     let recomendados = recomendadosData;
     let homeServices = homeService;
-    let carruselTest =carruselTestimonios;
     return (
         <>
             <Header />
