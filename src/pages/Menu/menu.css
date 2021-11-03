@@ -1,4 +1,4 @@
-#menu {
+.fondo-oscuro {
   background-image: url("../../assets/images/fondo_oscuro.jpg");
   background-size: cover;
   background-position: center center;
@@ -6,7 +6,7 @@
   background-position: center center;
 }
 
-.botonMenu,
+.btn,
 .agregarCarrito {
   width: 200px;
   font-family: "Roboto Slab", serif;

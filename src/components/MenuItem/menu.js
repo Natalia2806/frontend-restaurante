@@ -1,8 +1,28 @@
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
+
 import "./menu.css";
 
-export const MenuItem = ({ data: { name, description, price, image } }) => {
+export const MenuItem = ({
+  data: { id, name, description, price, image },
+  showAlert,
+}) => {
+  const { onShowModal, addToShoppingCart } = useContext(AppContext);
+
+  const onAddToCart = () => {
+    showAlert();
+    return addToShoppingCart({
+      id,
+      name,
+      description,
+      price,
+      image,
+      add: true,
+    });
+  };
+
   return (
-    <div className="col" style={{ marginTop: "32px" }}>
+    <div class="col" style={{ marginTop: "32px" }}>
       <div id="nameProduct">
         <h3>{name}</h3>
       </div>
@@ -13,28 +33,28 @@ export const MenuItem = ({ data: { name, description, price, image } }) => {
 
       <div id="priceProduct">
         <h2>
-          <i className="fas fa-dollar-sign"></i>
-          <span className="precio"> {price} </span>
+          <i class="fas fa-dollar-sign"></i>
+          <span class="precio"> {price} </span>
         </h2>
       </div>
 
-      <div className="description">
+      <div class="description">
         <h6>{description}</h6>
         <br />
         <button
           type="button"
-          className="btn btn-warning btn-block"
-          class="btn btn-warning btn-block botonMenu"
-          data-bs-toggle="modal"
-          data-bs-target="#burger1"
+          class="btn btn-warning btn-block"
+          onClick={() => {
+            onShowModal(name, image);
+          }}
         >
-          <i className="fas fa-plus-circle"></i> Más información
+          <i class="fas fa-plus-circle"></i> Más información
         </button>
       </div>
 
-      <div className="addProduct">
-        <button className="agregarCarrito">
-          <i className="fas fa-shopping-cart"></i> Agregar carrito
+      <div class="addProduct" style={{ marginTop: "12px" }}>
+        <button class="agregarCarrito" onClick={onAddToCart}>
+          <i class="fas fa-shopping-cart"></i> Agregar carrito
         </button>
       </div>
     </div>
