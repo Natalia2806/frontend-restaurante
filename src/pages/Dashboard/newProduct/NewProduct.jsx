@@ -11,7 +11,7 @@ export default function NewProduct() {
         </div>
         <div className="addProductItem">
           <label>Nombre</label>
-          <input type="text" placeholder="Apple Airpods" />
+          <input type="text" placeholder="Nombre Del Producto" />
         </div>
         <div className="addProductItem">
           <label>Inventario</label>

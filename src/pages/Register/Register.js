@@ -1,4 +1,5 @@
 import React,  { useState }  from "react";
+import "./Register.css";
 import Title from "../../components/register/Title/Title";
 import Label from "../../components/register/Label/Label";
 import Input from "../../components/register/Input/Input";
@@ -65,7 +66,7 @@ function Register() {
                     <h2>Hola, {user}!</h2>
                 </div>
                 :
-                <div className="contact-wrapper animated boun ceInUP">
+                <div className="contact-register animated boun ceInUP">
                     <Title text='Registrarse' />
                     {hasError && <label className="label-alert">Los datos ingresados son incorrectos.</label>}
                     <Label text='Correo electronico' />
@@ -98,7 +99,7 @@ function Register() {
 
 
                     <div className='ingresarButton'>
-                        <button className='btn' onClick={handleSubmit}>
+                        <button className='btn-register' onClick={handleSubmit}>
                             Registrarse
                         </button>
 

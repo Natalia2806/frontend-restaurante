@@ -7,36 +7,36 @@ export default function NewUser() {
       <form className="newUserForm">
         <div className="newUserItem">
           <label>Usuario</label>
-          <input type="text" placeholder="john" />
+          <input className="inputNewUser" type="text" placeholder="john" />
         </div>
         <div className="newUserItem">
           <label>Nombre completo</label>
-          <input type="text" placeholder="John Smith" />
+          <input className="inputNewUser" type="text" placeholder="John Smith" />
         </div>
         <div className="newUserItem">
           <label>Correo</label>
-          <input type="email" placeholder="john@gmail.com" />
+          <input className="inputNewUser" type="email" placeholder="john@gmail.com" />
         </div>
         <div className="newUserItem">
           <label>Contraseña</label>
-          <input type="password" placeholder="password" />
+          <input className="inputNewUser" type="password" placeholder="password" />
         </div>
         <div className="newUserItem">
           <label>Celular</label>
-          <input type="text" placeholder="+1 123 456 78" />
+          <input className="inputNewUser" type="text" placeholder="+1 123 456 78" />
         </div>
         <div className="newUserItem">
           <label>Direccion</label>
-          <input type="text" placeholder="New York | USA" />
+          <input className="inputNewUser" type="text" placeholder="New York | USA" />
         </div>
         <div className="newUserItem">
           <label>Genero</label>
           <div className="newUserGender">
-            <input type="radio" name="gender" id="male" value="male" />
+            <input className="inputNewUser" type="radio" name="gender" id="male" value="male" />
             <label for="male">Masculino</label>
-            <input type="radio" name="gender" id="female" value="female" />
+            <input className="inputNewUser" type="radio" name="gender" id="female" value="female" />
             <label for="female">Femenino</label>
-            <input type="radio" name="gender" id="other" value="other" />
+            <input className="inputNewUser" type="radio" name="gender" id="other" value="other" />
             <label for="other">Otro</label>
           </div>
         </div>

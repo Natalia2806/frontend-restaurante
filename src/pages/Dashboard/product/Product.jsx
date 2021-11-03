@@ -9,8 +9,8 @@ export default function Product() {
     <div className="product">
       <div className="productTitleContainer">
         <h1 className="productTitle">Productos</h1>
-        <Link to="/newproduct">
-          <button className="productAddButton">Crear</button>
+        <Link to="/products">
+          <button className="productAddButton">Guardar</button>
         </Link>
       </div>
       <div className="productTop">
@@ -19,8 +19,8 @@ export default function Product() {
           </div>
           <div className="productTopRight">
               <div className="productInfoTop">
-                  <img src="https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="productInfoImg" />
-                  <span className="productName">Apple Airpods</span>
+                  <img src="https://i.ibb.co/hcTYRZF/hamburguesa-especial.png" alt="" className="productInfoImg" /> 
+                  <span className="productName">Hamburguesa especial</span>
               </div>
               <div className="productInfoBottom">
                   <div className="productInfoItem">
@@ -60,7 +60,7 @@ export default function Product() {
               </div>
               <div className="productFormRight">
                   <div className="productUpload">
-                      <img src="https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="productUploadImg" />
+                      <img src="https://i.ibb.co/hcTYRZF/hamburguesa-especial.png" alt="" className="productUploadImg" />
                       <label for="file">
                           <Publish/>
                       </label>

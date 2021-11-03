@@ -3,40 +3,40 @@ import "./newClient.css";
 export default function NewClient() {
   return (
     <div className="newClient">
-      <h1 className="newClientTitle">Nuevo usuario</h1>
+      <h1 className="newClientTitle">Nuevo cliente</h1>
       <form className="newClientForm">
         <div className="newClientItem">
           <label>Usuario</label>
-          <input type="text" placeholder="john" />
+          <input className="inputNewClient" type="text" placeholder="john" />
         </div>
         <div className="newClientItem">
           <label>Nombre completo</label>
-          <input type="text" placeholder="John Smith" />
+          <input className="inputNewClient" type="text" placeholder="John Smith" />
         </div>
         <div className="newClientItem">
           <label>Correo</label>
-          <input type="email" placeholder="john@gmail.com" />
+          <input className="inputNewClient" type="email" placeholder="john@gmail.com" />
         </div>
         <div className="newClientItem">
           <label>Contraseña</label>
-          <input type="password" placeholder="password" />
+          <input className="inputNewClient" type="password" placeholder="password" />
         </div>
         <div className="newClientItem">
           <label>Celular</label>
-          <input type="text" placeholder="+1 123 456 78" />
+          <input className="inputNewClient" type="text" placeholder="+1 123 456 78" />
         </div>
         <div className="newClientItem">
           <label>Direccion</label>
-          <input type="text" placeholder="New York | USA" />
+          <input className="inputNewClient" type="text" placeholder="New York | USA" />
         </div>
         <div className="newClientItem">
           <label>Genero</label>
           <div className="newClientGender">
-            <input type="radio" name="gender" id="male" value="male" />
+            <input className="inputNewClient" type="radio" name="gender" id="male" value="male" />
             <label for="male">Masculino</label>
-            <input type="radio" name="gender" id="female" value="female" />
+            <input className="inputNewClient" type="radio" name="gender" id="female" value="female" />
             <label for="female">Femenino</label>
-            <input type="radio" name="gender" id="other" value="other" />
+            <input className="inputNewClient" type="radio" name="gender" id="other" value="other" />
             <label for="other">Otro</label>
           </div>
         </div>

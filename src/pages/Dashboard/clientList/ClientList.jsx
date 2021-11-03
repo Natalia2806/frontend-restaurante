@@ -1,7 +1,7 @@
 
 import "./clientList.css";
 import { DataGrid } from "@material-ui/data-grid";
-import { DeleteOutline } from "@material-ui/icons";
+import { Delete, Edit } from "@material-ui/icons";
 import { clientRows } from "../../../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -46,10 +46,11 @@ export default function ClientList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={"/client/" + params.row.id}>
-              <button className="clientListEdit">Editar</button>
+            <Link className="clientListEditL" to={"/client/" + params.row.id}>
+              <Edit className="clientListEdit"/>
             </Link>
-            <DeleteOutline
+            &nbsp;&nbsp;&nbsp;
+            <Delete
               className="clientListDelete"
               onClick={() => handleDelete(params.row.id)}
             />
@@ -61,6 +62,12 @@ export default function ClientList() {
 
   return (
     <div className="clientList">
+      <div className="clientTitleContainer">
+          <h1 className="clientTitle">Clientes</h1>
+          <Link to="/newclient">
+            <button className="clientAddButton">Crear</button>
+          </Link>
+        </div>
       <DataGrid
         rows={data}
         disableSelectionOnClick
