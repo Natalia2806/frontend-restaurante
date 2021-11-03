@@ -12,7 +12,7 @@ export const ServiciosCard = (props) => {
                     <p class="card-text">
                         {props.texto}
                     </p>
-                    <a href="form-reservas.html" class="btn btn-primary boton-servicios"
+                    <a href="/formReserva" class="btn btn-primary boton-servicios"
                     >RESERVAR</a>
                 </div>
             </div>
