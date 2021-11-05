@@ -1,16 +1,16 @@
 import { Header } from "../../components/Header/header";
 import { Recomendados } from "../../components/Recomendados/recomendados";
 import { HomeServicios } from "../../components/homeServicios/homeServicios";
-import { Carrusel } from "../../components/Carrusel/Carrusel";
+
 
 import recomendadosData from "../../data/recomendadosData";
 import homeService from "../../data/homeService.json";
-import carruselTestimonios from "../../data/carruselTest.json";
+
 
 export const Home = () => {
   let recomendados = recomendadosData;
   let homeServices = homeService;
-  let carruselTest = carruselTestimonios;
+
   return (
     <>
       <Header />
@@ -61,17 +61,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section id="comentarios">
-        <div class="container">
-          <div class="content-center">
-            <h1 class="padding-top padding-h1">
-              Unas palabras de nuestros clientes
-            </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-          </div>
-          <Carrusel />
-        </div>
-      </section>
+      
     </>
   );
 };
