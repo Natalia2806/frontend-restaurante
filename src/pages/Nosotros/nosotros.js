@@ -1,9 +1,12 @@
 import { Personal } from "../../components/NosotrosPersonal/personal";
 import "./nosotros.css";
 import personal from "../../data/personal.json";
+import { Carrusel } from "../../components/Carrusel/Carrusel";
+import carruselTestimonios from "../../data/carruselTest.json";
 export const Nosotros = () => {
 
-    let personalData = personal ;
+    let personalData = personal;
+    let carruselTest = carruselTestimonios;
     return (
         <>
 
@@ -19,7 +22,7 @@ export const Nosotros = () => {
                         </div>
                         <div className="col-lg-7">
                             <div className="container contener_imagen">
-                                <img src="http://localhost:3000/images/restaurante1.jpg " className="img-fluid rounded restaurante" alt=""/>
+                                <img src="http://localhost:3000/images/restaurante1.jpg " className="img-fluid rounded restaurante" alt="" />
                             </div>
                         </div>
                     </div>
@@ -36,16 +39,30 @@ export const Nosotros = () => {
                     <div className="row ">
 
                         {personalData.map(data =>
-                            <Personal id={data.id} img = {data.img} titulo = {data.titulo}></Personal>
-                        )} 
+                            <Personal id={data.id} img={data.img} titulo={data.titulo}></Personal>
+                        )}
                     </div>
                 </div>
-        </section>
-
-        <section id="comentariosComponent">
-                            <h1>Opiniones</h1>
-                            <p>Aquí van los comentarios de nuestros clientes</p>
-        </section>
+            </section>
+            <section id="comentarios">
+                <div className="container">
+                    <div className="content-center">
+                        <h1 className="padding-top padding-h1">
+                            Unas palabras de nuestros clientes
+                        </h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    </div>
+                    <Carrusel />
+                    <div className="form-group">
+                        <div className="Row">
+                            <label className="Comentarios">Añadir comentarios</label>
+                            <div className="col-">
+                                <textarea className="form-control" id="Comentarios" rows="2"></textarea> <button className="btn button-comentarios">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     );
 };
