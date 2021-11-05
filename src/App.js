@@ -17,7 +17,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 
 import Layout from "./components/Loyout";
-import Dashboard from "./pages/Dashboard/Dashboard";
+
 
 export const App = () => {
   return (
@@ -33,7 +33,6 @@ export const App = () => {
             <Route exact path="/register" component={Register} />
             <Route exact path="/formReserva" component={Form} />
             <Route exact path="/formContactanos" component={FormContact} />
-            <Route exact path="/inicio" component={Dashboard} />
             <Route exact path="/registro" component={Register} />
             <Route exact path="/menu" component={Menu} />
             <Route exact path="/carrito" component={ShoppingCart} />

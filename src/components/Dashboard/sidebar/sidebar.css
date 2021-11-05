@@ -37,12 +37,14 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
+  color: white;
 }
 
 .sidebarListItem.active,
 .sidebarListItem:hover {
   /* background-color: rgb(240, 240, 255); */
   background-color: black; 
+  color: #db8f00;
 }
 
 .sidebarIcon{

@@ -56,7 +56,7 @@ const Login = () => {
   }
 
   return (
-    <div className="Administrador" style={{ marginTop: "72px" }}>
+    <div className="Administrador" style={{ marginTop: "72px" }}       >
       {isLogin ? (
         <Dashboard />
       ) : (
