@@ -7,35 +7,44 @@ import swal from "sweetalert";
 
 export const OrderInfo = () => {
   const { shoppingCartItems, calculateTotal } = useContext(AppContext);
-  const arr = ["a", "b", 8];
-  console.log(shoppingCartItems);
-
-  /*
+  var total = 0;
   let order = [];
+
   for (let i = 0; i < shoppingCartItems.length; i++) {
-    //Variables que entrarán al objetoProducto
-    const info = shoppingCartItems[i].get.textContent;
-    order.push(info);
+    var nameProduct = shoppingCartItems[i].name;
+    var priceProduct = shoppingCartItems[i].price;
+    var count = shoppingCartItems[i].count;
+    total = total + priceProduct * count;
+
+    order.push(i + 1 + "." + nameProduct);
+    order.push("Precio:" + priceProduct);
+    order.push("Cantidad pedida:" + count);
+    order.push("   ");
   }
-*/
 
   const [toSend, setToSend] = useState({
-    fullname: "Laura Ramirez",
+    fullname: "",
     email: "",
     addres: "",
     phone: "",
     comment: "",
-    products: arr,
-    total: calculateTotal,
+    products: order,
+    totalOrder: total,
   });
-
-  /*console.log(shoppingCartItems);
-  console.log(calculateTotal);*/
 
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
+  const clearState = () => {
+    toSend.fullname = "";
+    toSend.email = "";
+    toSend.addres = " ";
+    toSend.phone = " ";
+    toSend.comment = " ";
+    toSend.products = " ";
+    toSend.totalOrder = " ";
+  };
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -43,13 +52,14 @@ export const OrderInfo = () => {
       .send("order_service", "order_form", toSend, "user_RKAC5J0fHBnQaQlPCA7ST")
       .then(
         (result) => {
-          console.log(result.text);
+          clearState();
           swal({
             icon: "success",
             title: "¡Envio exitoso!",
             text: "Pedido confirmado",
           });
-          e.target.reset();
+
+          console.log(result.text);
         },
         (error) => {
           console.log(error.text);
@@ -70,6 +80,7 @@ export const OrderInfo = () => {
                   name="fullname"
                   id=""
                   value={toSend.fullname}
+                  onChange={handleChange}
                 />
               </div>
               <div className="order-info__form-pair">
