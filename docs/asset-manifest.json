@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/frontend-restaurante/static/css/main.cbc1b033.chunk.css",
+    "main.js": "/frontend-restaurante/static/js/main.d5ddaaef.chunk.js",
+    "main.js.map": "/frontend-restaurante/static/js/main.d5ddaaef.chunk.js.map",
+    "runtime-main.js": "/frontend-restaurante/static/js/runtime-main.c07e24aa.js",
+    "runtime-main.js.map": "/frontend-restaurante/static/js/runtime-main.c07e24aa.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/frontend-restaurante/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.859a1515.chunk.js": "/frontend-restaurante/static/js/2.859a1515.chunk.js",
+    "static/js/2.859a1515.chunk.js.map": "/frontend-restaurante/static/js/2.859a1515.chunk.js.map",
+    "index.html": "/frontend-restaurante/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/frontend-restaurante/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.cbc1b033.chunk.css.map": "/frontend-restaurante/static/css/main.cbc1b033.chunk.css.map",
+    "static/js/2.859a1515.chunk.js.LICENSE.txt": "/frontend-restaurante/static/js/2.859a1515.chunk.js.LICENSE.txt",
+    "static/media/header.css": "/frontend-restaurante/static/media/comida3.19392dd5.jpg",
+    "static/media/Register.css": "/frontend-restaurante/static/media/fondo_oscuro.4562a76b.jpg",
+    "static/media/logo@2x.04dd1c3c.png": "/frontend-restaurante/static/media/logo@2x.04dd1c3c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c07e24aa.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.859a1515.chunk.js",
+    "static/css/main.cbc1b033.chunk.css",
+    "static/js/main.d5ddaaef.chunk.js"
+  ]
+}
