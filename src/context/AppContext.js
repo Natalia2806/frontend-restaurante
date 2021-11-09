@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
@@ -30,7 +29,6 @@ export const AppProvider = ({ children }) => {
     add,
   }) => {
     let exist = false;
-
     for (let i = 0; i < shoppingCartItems.length; i++) {
       if (shoppingCartItems[i].id === id) {
         shoppingCartItems[i].count = add
@@ -55,6 +53,11 @@ export const AppProvider = ({ children }) => {
         },
       ]);
     }
+
+    // const articuloExistencia = shoppingCartItems.find(x => x.id === id);
+    // if (articuloExistencia) {
+    //   setShoppingCartItems([...shoppingCartItems, { id, name, image, description, price, count: 1, }]);
+    // }
   };
 
   const removeToShoppingCart = (id) => {
@@ -69,11 +72,12 @@ export const AppProvider = ({ children }) => {
 
   const calculateTotal = () => {
     let result = 0;
-
+    const resultado =  shoppingCartItems.reduce((previus,current) => previus + (current.count * current.price) );
+    
     for (let item of shoppingCartItems) {
       result += item.count * item.price;
     }
-
+    console.log(result,resultado)
     return result;
   };
 
